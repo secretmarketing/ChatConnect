@@ -1,0 +1,24 @@
+{
+  "name": "ChatConnect",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://secretmarketing.github.io/ChatConnect/", // <-- ADD THIS LINE
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "predeploy": "npm run build", // <-- ADD THIS LINE
+    "deploy": "gh-pages -d out -t true" // <-- ADD THIS LINE
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "gh-pages": "latest" // <-- ENSURE THIS IS HERE TOO
+  }
+}
