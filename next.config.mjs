@@ -12,3 +12,8 @@ export default {
   basePath: '/ChatConnect',
   assetPrefix: isProd ? '/ChatConnect/' : '',
 };
+
+"scripts": {
+  // ...existing scripts...
+  "deploy": "gh-pages -d out"
+}
