@@ -6,7 +6,7 @@ const nextConfig = {
 
 const isProd = process.env.NODE_ENV === 'production';
 
-module.exports = {
+export default {
   ...nextConfig,
   // Set the base path for the project
   basePath: '/ChatConnect',
