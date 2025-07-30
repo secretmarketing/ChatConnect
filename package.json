@@ -2,14 +2,14 @@
   "name": "your-app-name",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://secretmarketing.github.io/ChatConnect/", // <--- IMPORTANT LINE
+  "homepage": "https://secretmarketing.github.io/ChatConnect/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build", // <--- NEW LINE
-    "deploy": "gh-pages -d out -t true" // <--- NEW LINE
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "next": "latest",
@@ -19,6 +19,6 @@
   "devDependencies": {
     "eslint": "latest",
     "eslint-config-next": "latest",
-    "gh-pages": "latest" // <--- MAKE SURE 'gh-pages' IS HERE
+    "gh-pages": "latest"
   }
 }
