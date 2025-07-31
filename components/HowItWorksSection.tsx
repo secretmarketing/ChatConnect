@@ -39,10 +39,10 @@ export const HowItWorksSection = () => {
           <div className="lg:order-first">
             <Image
               src="https://readdy.ai/api/search-image?query=Professional%20customer%20service%20representative%20using%20AI%20chatbot%20interface%20on%20smartphone%2C%20WhatsApp%20conversation%20showing%20automated%20responses%2C%20modern%20office%20setting%20with%20multiple%20screens%20displaying%20customer%20analytics%2C%20clean%20minimal%20design%20with%20green%20and%20blue%20interface%20elements%2C%20Malaysian%20business%20professional%20smiling%20while%20managing%20multiple%20customer%20chats%20effortlessly&width=600&height=400&seq=feature-1&orientation=landscape"
-              alt="24/7 Customer Support"
-              width={600}
+              alt="..."
+              width={640}
               height={400}
-              className="w-full rounded-lg shadow-lg object-cover"
+              unoptimized
             />
           </div>
         </div>
