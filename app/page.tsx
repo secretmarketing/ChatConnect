@@ -1,6 +1,6 @@
 'use client';
 
-
+import React, { useState } from "react";
 import Link from 'next/link';
 import { ProblemSection } from '@/components/ProblemSection';
 import { SolutionSection } from '@/components/SolutionSection';
@@ -8,6 +8,8 @@ import { HowItWorksSection } from '@/components/HowItWorksSection';
 import { BenefitsGrid } from '@/components/BenefitsGrid';
 
 export default function Home() {
+  const [showVideo, setShowVideo] = useState(false);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -40,27 +42,39 @@ export default function Home() {
               >
                 Get Started FREE Today
               </a>
-              <a
-                href="#demo-video"
+              <button
+                type="button"
+                onClick={() => setShowVideo(true)}
                 className="bg-white hover:bg-gray-100 text-green-600 px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition border border-green-500"
               >
                 Watch Demo Video
-              </a>
+              </button>
             </div>
 
-            {/* Insert video below the buttons */}
-            <div id="demo-video" className="mt-8 flex justify-center">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/watch?v=_-MIFofXRNU&list=RDSrbe5AbCV9c&index=19"
-                title="Demo Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="rounded-lg shadow-lg"
-              ></iframe>
-            </div>
+            {/* Video Modal */}
+            {showVideo && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
+                <div className="relative bg-white rounded-lg shadow-lg p-4">
+                  <button
+                    onClick={() => setShowVideo(false)}
+                    className="absolute top-2 right-2 text-gray-700 hover:text-red-500 text-2xl font-bold"
+                    aria-label="Close"
+                  >
+                    &times;
+                  </button>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/_-MIFofXRNU"
+                    title="Demo Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="rounded-lg shadow-lg"
+                  ></iframe>
+                </div>
+              </div>
+            )}
 
             <div className="mt-8 text-sm opacity-90">
               ✅ No Setup Fees • ✅ 30-Day Free Trial • ✅ Cancel Anytime

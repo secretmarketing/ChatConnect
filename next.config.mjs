@@ -3,10 +3,8 @@ const nextConfig = {
   output: 'export',
 };
 
-const isProd = process.env.NODE_ENV === 'production';
-
 export default {
-  ...nextConfig,
   basePath: '/ChatConnect',
-  assetPrefix: isProd ? '/ChatConnect/' : '',
+  assetPrefix: '/ChatConnect/',
+  output: 'export',
 };
