@@ -34,12 +34,32 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap">
+              <a
+                href="#get-started"
+                className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition"
+              >
                 Get Started FREE Today
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 whitespace-nowrap">
+              </a>
+              <a
+                href="#demo-video"
+                className="bg-white hover:bg-gray-100 text-green-600 px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition border border-green-500"
+              >
                 Watch Demo Video
-              </button>
+              </a>
+            </div>
+
+            {/* Insert video below the buttons */}
+            <div id="demo-video" className="mt-8 flex justify-center">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/watch?v=_-MIFofXRNU&list=RDSrbe5AbCV9c&index=19"
+                title="Demo Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="rounded-lg shadow-lg"
+              ></iframe>
             </div>
 
             <div className="mt-8 text-sm opacity-90">
@@ -421,6 +441,20 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <a
+        href="https://wa.me/601133141739" // Replace with your WhatsApp number
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg flex items-center justify-center"
+        style={{ width: 60, height: 60 }}
+        aria-label="Chat on WhatsApp"
+      >
+        {/* WhatsApp SVG icon */}
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.832 4.584 2.236 6.364L4 29l7.818-2.048A11.96 11.96 0 0016 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.885 0-3.675-.516-5.192-1.414l-.37-.221-4.646 1.217 1.24-4.522-.24-.372A9.956 9.956 0 016 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.29-7.709c-.293-.146-1.734-.857-2.003-.954-.269-.098-.465-.146-.662.146-.197.293-.761.954-.934 1.15-.173.195-.346.22-.639.073-.293-.146-1.237-.456-2.36-1.453-.872-.779-1.461-1.74-1.634-2.033-.173-.293-.018-.451.13-.597.134-.133.293-.346.439-.519.146-.173.195-.293.293-.488.098-.195.049-.366-.024-.512-.073-.146-.662-1.6-.907-2.19-.239-.574-.482-.497-.662-.507l-.564-.01c-.195 0-.512.073-.78.366-.268.293-1.02 1-1.02 2.438 0 1.438 1.045 2.827 1.19 3.022.146.195 2.056 3.14 4.983 4.282.697.3 1.24.478 1.664.612.699.223 1.336.192 1.838.117.561-.084 1.734-.709 1.98-1.393.244-.684.244-1.271.171-1.393-.073-.122-.268-.195-.561-.342z"/>
+        </svg>
+      </a>
     </div>
   );
 }
