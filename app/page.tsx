@@ -77,7 +77,7 @@ export default function Home() {
             )}
 
             <div className="mt-8 text-sm opacity-90">
-              ✅ No Setup Fees • ✅ 30-Day Free Trial • ✅ Cancel Anytime
+              ✅ We • ✅ 30-Day Free Trial • ✅ Cancel Anytime
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ export const HowItWorksSection = () => {
 
           <div className="lg:order-first">
             <Image
-              src="/images/feature-1.jpg"
+              src="/ChatConnect/images/feature-1.jpg"
               alt="..."
               width={640}
               height={400}
