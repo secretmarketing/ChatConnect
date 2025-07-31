@@ -77,7 +77,7 @@ export default function Home() {
             )}
 
             <div className="mt-8 text-sm opacity-90">
-              ✅ We • ✅ 30-Day Free Trial • ✅ Cancel Anytime
+              ✅ We Do Setup For You • ✅ No Contract • ✅ You Dont Need To Do Anything
             </div>
           </div>
         </div>
@@ -403,7 +403,7 @@ export default function Home() {
           </button>
 
           <div className="text-sm opacity-90">
-            💳 No Credit Card Required • 🚀 Setup in 15 Minutes • ✅ Cancel Anytime
+            💳 No Credit Card Required • 🚀 Fast Setup From Our Side • ✅ Cancel Anytime
           </div>
         </div>
       </div>
